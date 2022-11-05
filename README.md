@@ -11,29 +11,9 @@ Refactor code when new better solutions are found.
 ## Lessons Learned:
 Not being able to answer a question is okay, as long as you learn how to solve it next time and take the initiative to improve.
 
-## More Projects
-<table bordercolor="#66b2b2">
-  <tr>
-    <td width="33.3%"  style="align:center;" valign="top">
-<a target="_blank" href="https://github.com/WilliamPasternak/busboy">Busboy Website</a>
-        <br />
-      <a target="_blank" href="https://github.com/WilliamPasternak/busboy">
-            <img src="https://github.com/WilliamPasternak/busboy/blob/main/busyboy.gif" width="100%"  alt="Busbo.co"/>
-        </a>
-    </td>
-    <td width="33.3%" valign="top">
-<a target="_blank" href="https://github.com/WilliamPasternak/Dilution-Calculator">Dilution Calculator Web App</a> 
-      <br />
-        <a target="_blank" href="https://github.com/WilliamPasternak/Dilution-Calculator">
-          <img src="https://github.com/WilliamPasternak/Dilution-Calculator/raw/main/Dilution.gif" width="100%" alt="Dilution Calculator App"/>
-        </a>
-    </td>
-    <td width="33.3%" valign="top">
-<a target="_blank" href="https://github.com/WilliamPasternak/Little-Armenia-Cafe">Little Armenia Cafe Website</a>
-        <br />
-        <a target="_blank" href="https://github.com/WilliamPasternak/Little-Armenia-Cafe">
-          <img src="https://github.com/WilliamPasternak/Little-Armenia-Cafe/blob/main/Little%20Armenia%20Cafe/LittleArmeniaCafecom_Site_Overview.gif" width="100%" alt="Little Armenia Cafe"/>
-        </a>
-    </td>
-  </tr>
-</table>
+## More Coding Challenges
+<ul> 
+<li> <a target="_blank" href = "https://github.com/WilliamPasternak/Huntober-Coding-Challenges">Huntober</a> </li>
+<li> <a target="_blank" href ="https://github.com/WilliamPasternak/Codewars-Solutions">Codewars Solutions</a> </li>
+<li> <a target="_blank" href="https://github.com/WilliamPasternak/Algorithm-Practice"> Algorithms Practice</a> </li>
+</ul>
