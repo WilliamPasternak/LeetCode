@@ -10,6 +10,8 @@
     // return array
 **/    
     
+
+    // Brute Force Time: O(N^2) Space: O(1)
 let twoSum = function(nums, target) {
     for(let i = 0; i <= nums.length -2; i++){
         for(let j = i + 1; j <= nums.length -1 ; j++){
@@ -20,3 +22,14 @@ let twoSum = function(nums, target) {
     }
     
 };
+
+// Refactored Time: O(N) Space: O(N)
+function twoSum(numbers, target) {
+let numsLookup = {}
+for(let i = 0; i <numbers.length; i++){
+   if((target - numbers[i]) in numsLookup ){
+      return [i , numsLookup[target - numbers[i]] ]
+   }
+   numsLookup[numbers[i]] = i
+}
+}
