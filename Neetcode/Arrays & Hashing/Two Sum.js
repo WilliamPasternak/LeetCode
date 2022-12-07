@@ -27,9 +27,12 @@ let twoSum = function(nums, target) {
 function twoSum(numbers, target) {
 let numsLookup = {}
 for(let i = 0; i <numbers.length; i++){
+    // if target - current num in cache
    if((target - numbers[i]) in numsLookup ){
+    // return [current index, index value from lookup for target - current number]
       return [i , numsLookup[target - numbers[i]] ]
    }
+   // Set Obj key:value  to currentNumber: index
    numsLookup[numbers[i]] = i
 }
 }
