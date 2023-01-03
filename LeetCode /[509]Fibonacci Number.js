@@ -4,6 +4,15 @@ That is: F(0) = 0, F(1) = 1 and F(n) = F(n - 1) + F(n - 2), for n > 1.
 
 Given n, calculate F(n).
 
+
+// Recursion:
+function fib(n){
+  if (n > 1) return fib(n-1) + fib(n-2)
+  else if (n === 1) return 1
+  else return 0
+}
+
+// Standard Loop:
 function fibValue(n){
 const fibArray = [0,1]
 for(let i = 2; i <=n; i++){
@@ -11,6 +20,8 @@ for(let i = 2; i <=n; i++){
 }
 return fibArray[fibArray.length - 1]
 }
+
+
 
 // Tests
 console.log(fibValue(2), '1')
