@@ -15,3 +15,19 @@ var groupAnagrams = function(strings) {
   }
   return Object.values(result); // Return the arrays in result
 }
+
+
+
+function groupAnagrams(strings){
+  let result = {}
+
+  for(let word of strings){
+    const keys = new Array(26).fill(0)
+    for(let char of word){
+      keys[char.charCodeAt(0) - 97] += 1
+    }
+    if (!result[keys]) result[keys] = []
+    result[keys].push(word)  
+  }
+  return Object.values(result)
+}
