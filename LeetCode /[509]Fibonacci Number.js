@@ -4,6 +4,23 @@ That is: F(0) = 0, F(1) = 1 and F(n) = F(n - 1) + F(n - 2), for n > 1.
 
 Given n, calculate F(n).
 
+// Memoized
+const memo = {}
+function fib(n) {
+    if(n <= 1){
+        return n
+    }else if( memo[n] ){
+        return memo[n]
+    }else{
+        let result = fib(n - 1) + fib(n - 2)
+        memo[n] = result
+        return result
+    }
+}
+
+console.log(fib(5))
+
+
 
 // Recursion:
 function fib(n){
