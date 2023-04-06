@@ -11,12 +11,17 @@ Write a function that takes in a non-empty string and returns its run-length enc
 - Thus, long runs (runs of 10 or more characters) should be encoded in a split fashion; the aforementioned run should be encoded as "9A3A"
 */
 
+
+// Time:  O(N): N is the length of input string
+// Space: O(N): Encoding Array, is the same length as string
+
+
 function runLengthEncoding(string) { 
   const encoding = []
   let [left,right] = [0,0]
 
   // Track currentLetter and currentCount of times it has occured so far.
-  let currentLetter = string[0] 
+  let currentChar = string[0] 
   let currentCount = 0
   
   // Iterate over string with 2 pointers
@@ -24,13 +29,13 @@ function runLengthEncoding(string) {
     // Push count and letter to encoding array, if chars are different OR count is 9
     if(currentCount === 9 || string[left] !== string[right] ){
       encoding.push(currentCount)
-      encoding.push(currentLetter)
+      encoding.push(currentChar)
       currentCount = 0
 
-      // If Characters are different, change current Character, move up left pointer
+      // If Characters are different, change currentCharacter, move up left pointer
       if(string[left] !== string[right]){
       left = right
-      currentLetter = string[left]
+      currentChar = string[left]
       }
 
     }
@@ -44,7 +49,7 @@ function runLengthEncoding(string) {
   }
   // Handle the last number and letter
       encoding.push(currentCount)
-      encoding.push(currentLetter)
+      encoding.push(currentChar)
 
   return encoding.join('')
   
