@@ -16,6 +16,37 @@ Write a function that takes in a non-empty string and returns its run-length enc
 // Space: O(N): Encoding Array, is the same length as string
 
 
+
+
+
+
+// Refactored
+function runLengthEncoding(string) {
+  const encoding = [];
+  let currentCharacter = string[0];
+  let currentCharacterCount = 1;
+  
+  for (let i = 1; i <= string.length; i++) {
+    if (i === string.length || string[i] !== currentCharacter || currentCharacterCount === 9) {
+      // Add the count and character to the encoding array
+      encoding.push(currentCharacterCount)
+      encoding.push(currentCharacter)
+
+      // Reset the current character and count
+      currentCharacterCount = 1;
+      currentCharacter = string[i];
+    } else {
+      // Increment the count
+      currentCharacterCount++;
+    }
+  }
+
+  // Join the encoding array into a string and return it
+  return encoding.join("");
+}
+
+
+
 function runLengthEncoding(string) { 
   const encoding = []
   let [left,right] = [0,0]
